@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)https://portal-1-%2Dlineschete.repl.co/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Linda Eschete</title>
+  
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="./Linda Eschete_files/main.css">
+  <link rel="stylesheet" href="./Linda Eschete_files/nav.css">
+  <link rel="stylesheet" href="./Linda Eschete_files/forms.css">
+</head>
+
+<body>
+  <header>
+    <h1>Linda Eschete</h1>
+    <nav class="topnav" id="myTopnav">
+      <a href="https://portal-1--lineschete.repl.co/index.html" class="active">Home</a>
+      <a href="https://portal-1--lineschete.repl.co/#" target="_blank">Stylin with CSS</a>
+      <a href="https://portal-1--lineschete.repl.co/#" target="_blank">Portal</a>
+      <a href="https://portal-1--lineschete.repl.co/#" target="_blank">GitHub</a>
+      <a href="https://portal-1--lineschete.repl.co/#" target="_blank">LinkedIn</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">☰</a>
+    </nav>
+  </header>
+
+  <main class="wrapper">
+    <picture class="profile">
+      <source media="(min-width: 1200px)" srcset="images/desktop.jpg">
+      <source media="(min-width: 501px)" srcset="images/tablet.jpg">
+      <img src="./Linda Eschete_files/phone.jpg" alt="That&#39;s me!">
+    </picture>
+    <h2 class="subheader">About Me</h2>
+
+    <p>Hi, my name is Linda Eschete. I’m currently enrolled as a student through the Year Up program. I’m focusing my
+      studies on quality assurance and scripting languages that can broaden my proficiency in a work space. In high
+      school I led and worked in the media with black student union and fashion club. I enjoy engaging in communities
+      where I can gain and spread knowledge. Having the opportunity to grow throughout my education has motivated me to
+      apply myself in a field where teamwork is necessary.</p>
+
+    <p>Replace the pictures named <b>desktop.jpg</b>, <b>tablet.jpg</b> and <b>phone.jpg</b> in the <b>images</b> folder
+      with pictures of yourself, or pictures that represent you.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent hendrerit nec purus non vestibulum. Orci varius
+      natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus ipsum odio, lacinia congue
+      varius in, iaculis eget felis. Proin facilisis dui nec purus viverra, sed tempus risus sollicitudin.</p>
+
+    <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce malesuada felis
+      ac dapibus tempus. Nulla in purus id leo finibus consequat quis eget mi. In gravida maximus risus eget
+      scelerisque. In placerat diam ut tellus ullamcorper, eu elementum augue vulputate. Cras ut pretium ante. Sed porta
+      eros vel lobortis gravida. Nullam ultrices justo eget felis pharetra aliquam. Maecenas hendrerit hendrerit
+      facilisis.</p>
+
+    <h3>Page Origin</h3>
+
+    <p>The HTML/CSS comes from Sara Newman's Web Fundamentals class as taught at Seattle Central. This page provides a
+      basis for students to build a responsive portal page.</p>
+
+    <p>Study how this page is built, with the <a href="https://www.youtube.com/watch?v=151NXMk0a2c" target="_blank">DOM
+        Inspector</a> and use it as a foundation for your portal or other sites!</p>
+    <footer>
+      <p><small>© 2021-<span id="this-year">2023</span> by
+          Linda Eschete, All Rights Reserved ~
+          <a id="html-checker" href="https://validator.w3.org/nu/?doc=https://portal-1--lineschete.repl.co/" target="_blank">Check HTML</a> ~
+          <a id="css-checker" href="https://jigsaw.w3.org/css-validator/validator?uri=https://portal-1--lineschete.repl.co/" target="_blank">Check CSS</a></small>
+      </p>
+    </footer>
+  </main>
+
+  <!-- Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon -->
+  <script>
+    //https://tinyurl.com/dynamic-html-checker
+    document.getElementById("html-checker").setAttribute("href", "https://validator.w3.org/nu/?doc=" + location.href);
+
+    document.getElementById("css-checker").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+
+    //set current year in span with id of this-year
+    let d = new Date(); let thisYear = d.getFullYear();
+    document.getElementById("this-year").innerHTML = thisYear;
+
+    //manages mobile nav 
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }   
+  </script>
+
+
+
+</body></html>
